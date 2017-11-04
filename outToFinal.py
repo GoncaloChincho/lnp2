@@ -15,11 +15,11 @@ elif(sys.argv[1] not in valid_words):
 word = sys.argv[1]
 
 if word == 'aposta':
-    final_filename = r'apostaStuff\apostaApostarApor.final'
-    out_path = r'apostaStuff\apostaApostarApor.out'
+    final_filename = r'apostaStuff\apostaAnotado.final'
+    out_path = r'apostaStuff\apostaAnotado.out'
 else:
-    final_filename = r'foremIrSerStuff\foremIrSer-2.final'
-    out_path = r'foremIrSerStuff\foremIrSer-2.out'
+    final_filename = r'foremIrSerStuff\foremAnotado.final'
+    out_path = r'foremIrSerStuff\foremAnotado.out'
 
 
 with open(out_path,'r',encoding='utf-8') as file:
