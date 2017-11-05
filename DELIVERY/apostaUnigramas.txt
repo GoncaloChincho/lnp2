@@ -1,3 +1,6 @@
+<	1209
+s	605
+>	1209
 tanto	5
 mais	65
 que	381
@@ -42,7 +45,8 @@ ensino	4
 superior	3
 público	9
 privado	3
-.	604
+.	597
+/s	605
 apesar	11
 das	49
 dificuldades	4
@@ -246,7 +250,7 @@ conjugação	2
 esforços	2
 coabitação	2
 cristãos	2
-protestantes	2
+protestantes.	2
 questão	4
 essa	5
 imaginários	2
@@ -1173,7 +1177,7 @@ decisivo	3
 actualmente	3
 exclusivo	3
 artesanato	2
-aveiro	8
+aveiro	7
 relacionados	2
 moliço	2
 motivos	4
@@ -1273,13 +1277,14 @@ confraria	3
 o.oliceiro	2
 gastronomia	2
 nasceu	2
+aveiro.	2
 protocolo	2
 lógica	2
 complementaridade	2
 disse	8
 pedro	4
 soares	3
-aaauav	2
+aaauav.	2
 falhado	2
 apuramento	2
 fases	2
@@ -1676,12 +1681,13 @@ artistas	2
 convidados	2
 14	3
 1999	2
-bidoeirense	3
+bidoeirense	2
 chegou	2
 fim	4
 ciclo	2
 alargado	2
 desportivo	4
+bidoeirense.	2
 oriundo	2
 clube	9
 relançar	2
@@ -1795,7 +1801,7 @@ baliza	2
 contrária	2
 sistematicamente	2
 faixas	2
-laterais	2
+laterais.	2
 rui	3
 sousa	2
 representante	3
@@ -1970,7 +1976,7 @@ aqui	3
 naqueles	2
 setores	3
 nada	3
-certo	5
+certo	4
 mim	2
 sul	4
 124	2
@@ -3044,6 +3050,7 @@ tvs	2
 praticidade	2
 93	2
 interessa	2
+certo.	2
 anderson	2
 birman	2
 sócio-diretor	2
@@ -3435,7 +3442,7 @@ camarões	2
 passes	2
 longos	2
 participando	2
-ataques	2
+ataques.	2
 coreana	2
 quarto	2
 boliviano	2
