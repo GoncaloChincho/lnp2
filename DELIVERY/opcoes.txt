@@ -1,0 +1,6 @@
+-Mantivémos a pontuação já existente no texto, achámos que pode influenciar a desambiguação certa da palavra a avaliar.
+-Acrescentámos os unigramas <s> e </s> ao vocabulário durante as contagens dos N-Gramas pois estes têm um peso significativo nos cálculos das probabilidades.
+-Começámos por implementar Alisamento Good-Turing mas chegámos à conclusão que existiam frequencias de ocurrências a 0, e por isso não conseguímos utilizar
+este método e recorremos ao Alisamento de Laplace.
+-Para criar os ficheiros .final, calcular as contagens dos N-Gramas e calcular o lema mais provável de uma frase, recorremos a scripts python.
+-Optámos por guardar os N-Gramas em ficheiros .txt pois não tivémos sucesso em utilizar toolkits para produzir os ficheiros ARPA (p.ex SRILM)
