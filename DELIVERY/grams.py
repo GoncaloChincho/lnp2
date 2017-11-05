@@ -103,7 +103,6 @@ for text_word in text_words:
 # In[114]:
 
 ngrams_to_file(word,unigram_counts,1)
-exit()
 # # Bigrams
 
 # In[61]:
