@@ -68,17 +68,24 @@ def ngrams_to_file(word,ngram_counts,n):
 
 file = open(final_filename,'r')
 text =(file.read()).lower()
-text_words = nltk.word_tokenize(text)
+
 file_lines = text.split('\n')
+for i in range(len(file_lines)):
+    file_lines[i] = 'xxxstartxxx ' + file_lines[i] + ' xxxendxxx'
+text = '\n'.join(file_lines)
 
-
+text_words = nltk.word_tokenize(text)
+for i in range(len(text_words)):
+    if text_words[i] == 'xxxstartxxx':
+        text_words[i] = '<s>'
+    elif text_words[i] == 'xxxendxxx':
+        text_words[i] = '</s>'
 # # Unigrams
 
 # In[71]:
 
 vocab = list_uniq(text_words)
-vocab.append('<s>')
-vocab.append('</s>')
+
 n_tokens = len(vocab)
 
 
@@ -88,8 +95,6 @@ unigram_counts = Counter()
 
 for token in vocab:
     unigram_counts[token] = 0
-unigram_counts['<s>'] = len(file_lines)
-unigram_counts['</s>'] = len(file_lines)
 
 for text_word in text_words:
     unigram_counts[text_word] += 1
@@ -98,7 +103,7 @@ for text_word in text_words:
 # In[114]:
 
 ngrams_to_file(word,unigram_counts,1)
-
+exit()
 # # Bigrams
 
 # In[61]:
@@ -114,7 +119,6 @@ for i in range(len(vocab) - 1):
 # In[49]:
 
 text_bigrams = list(ngrams(text_words,2))
-
 
 # In[50]:
 

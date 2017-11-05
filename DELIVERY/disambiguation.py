@@ -33,7 +33,7 @@ bigrams = {}
 for entry2 in bigrams_filter:
     if(not entry2):
         break #EOF
-    bigrams[(entry2.split()[0], entry2.split()[1])] = entry2.split()[2]
+    bigrams[(entry2.split()[0], entry2.split()[1])] = int(entry2.split()[2])
 
 
 param_filter = (param_file.read()).split('\n')
@@ -99,7 +99,7 @@ for sentence in sentences_filter:
 
                 if(i == len(words)-1):
                     prob_aux[2] = end_token_prob
-                    prob_aux[3] = bigram_probability(bigrams[("</s>", words[i])], start_token, vocabulary)
+                    prob_aux[3] = bigram_probability(bigrams[(words[i], "</s>")], start_token, vocabulary)
                     prob[0] += prob_aux[2]
                     prob[1] += prob_aux[2]
                     prob[2] += prob_aux[3]
@@ -125,7 +125,7 @@ for sentence in sentences_filter:
                 prob[2] += bigram_probability(1, 0, vocabulary)
                 prob[3] += bigram_probability(1, 0, vocabulary)
 
-    print("Sentence index " + c)
+    print("Sentence index ", c)
     c += 1
     print("Unigram probability " + lemma1 + ":\t")
     print("%5f" % prob[0])
