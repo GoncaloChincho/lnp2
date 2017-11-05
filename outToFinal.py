@@ -49,7 +49,7 @@ for i in range(len(final_tags)):
 file = open(final_filename,'w')
 
 for sentence in final_sentences:
-    file.write('<s> ' + sentence + '</s> \n')
+    file.write(sentence + '\n')
 
 file.close()
 print('The deed is done.')

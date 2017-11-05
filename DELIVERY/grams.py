@@ -85,11 +85,11 @@ n_tokens = len(vocab)
 # In[72]:
 
 unigram_counts = Counter()
-unigram_counts['<s>'] = len(file_lines)
-unigram_counts['</s>'] = len(file_lines)
 
 for token in vocab:
     unigram_counts[token] = 0
+unigram_counts['<s>'] = len(file_lines)
+unigram_counts['</s>'] = len(file_lines)
 
 for text_word in text_words:
     unigram_counts[text_word] += 1
@@ -98,7 +98,6 @@ for text_word in text_words:
 # In[114]:
 
 ngrams_to_file(word,unigram_counts,1)
-
 
 # # Bigrams
 
