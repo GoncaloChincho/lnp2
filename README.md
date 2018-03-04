@@ -1,1 +1,1 @@
-Word meaning disambiguation using 
+Word meaning disambiguation using N-Gram models and smoothing.
